@@ -32,6 +32,7 @@ function destroyBoxes() {
 }
 
 document.querySelector('[data-create]').addEventListener('click', () => {
+  destroyBoxes();
   const input = document.querySelector('input');
   const amount = Number(input.value.trim());
 
